@@ -1,13 +1,12 @@
 import React from "react";
-
+import { LoadingComponent } from "../Common";
 import HeaderSection from "./Header";
 import FooterSection from "./Footer";
-import LoadingSection from "./Loading";
 
 const LayoutComponent = ({ children }) => {
   return (
     <div className="bg-blue-200 w-full">
-      {false && <LoadingSection />}
+      {false && <LoadingComponent />}
 
       <HeaderSection />
       <div className="pt-16 pb-16 h-full">{children}</div>
@@ -16,12 +15,4 @@ const LayoutComponent = ({ children }) => {
   );
 };
 
-const withLayout = (Component) => (props) => {
-  return (
-    <LayoutComponent>
-      <Component {...props} />
-    </LayoutComponent>
-  );
-};
-
-export default withLayout;
+export default LayoutComponent;
