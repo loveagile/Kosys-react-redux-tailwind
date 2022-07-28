@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
 import { PATH } from "../../../consts";
+import { Images } from "../../../assets";
 
 const HeaderSection = () => {
   return (
-    <div className="flex align-center justify-between bg-indigo-700 p-4 w-full fixed top-0 text-white">
-      <Link to={PATH.Home} className="text-3xl font-bold">
-        React + Node
-      </Link>
-    </div>
+    <>
+      <div className="fixed w-full flex items-end justify-between h-20">
+        <Link to={PATH.Home} className="flex items-center ml-[114px]">
+          <span className="text-[32px]">KOSYS</span>
+          <Images.Svgs.Logo className="mt-2" />
+        </Link>
+      </div>
+    </>
   );
 };
 
