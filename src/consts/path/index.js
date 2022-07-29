@@ -10,3 +10,5 @@ export const LightPaper = "/lightpaper";
 export const Products = "/products";
 export const UseKosys = "/usekosys";
 export const WhitePaper = "/whitepaper";
+export const Projects = "/projects";
+export const Connect = "/connect";
